@@ -5,9 +5,9 @@ Build
 docker build -t detimage .
 ```
 
-Run
+Run (may add '-e "NODE_ENV=production"' or set it in Dockerfile)
 ```
-docker run -p 35953:35953 -d --name="detcontainer" detimage
+docker run -d --name="detcontainer" -p 35953:35953 detimage
 ```
 
 Stop

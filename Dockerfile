@@ -1,6 +1,9 @@
 # clone node's docker image
 FROM node:12-alpine AS app-base
 
+# set environment variable
+ENV NODE_ENV=production
+
 # set working dir
 WORKDIR /app
 # copy files from local folder to docker image
