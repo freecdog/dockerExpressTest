@@ -1,13 +1,23 @@
 # dockerExpressTest
 
 Build
-```
+```bash
 docker build -t detimage .
 ```
 
 Run
 ```
-docker run -p 35953:35953 -d detimage
+docker run -p 35953:35953 -d --name="detcontainer" detimage
+```
+
+Stop
+```
+docker stop detcontainer
+```
+
+Restart (if existed)
+```
+docker restart detcontainer
 ```
 
 Check what process takes the port (then 'kill -9 PID' if needed)
@@ -30,4 +40,3 @@ Check what inside of container:
    ```
    docker rm detcontainer
    ```
-   
