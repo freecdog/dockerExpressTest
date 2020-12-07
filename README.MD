@@ -1,5 +1,10 @@
 # dockerExpressTest
 
+Best practices
+https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#docker-run
+https://expressjs.com/en/advanced/best-practice-performance.html#set-node_env-to-production
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment
+
 Build
 ```bash
 docker build -t detimage .
